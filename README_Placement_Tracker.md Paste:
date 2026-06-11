@@ -1,0 +1,19 @@
+# Placement Tracker
+
+## Description
+A Python-based application that helps students track placement applications and their status.
+
+## Features
+- Add company details
+- Store role information
+- Track application status
+- View all applications
+
+## Technologies Used
+- Python
+
+## Future Improvements
+- CSV database storage
+- Application date tracking
+- Search functionality
+- Placement statistics dashboard

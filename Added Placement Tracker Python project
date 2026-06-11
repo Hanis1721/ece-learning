@@ -1,0 +1,38 @@
+ companies = []
+
+while True:
+    print("\n--- Placement Tracker ---")
+    print("1. Add Company")
+    print("2. View Applications")
+    print("3. Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        company = input("Company Name: ")
+        role = input("Role: ")
+        status = input("Status (Applied/Interview/Selected/Rejected): ")
+
+        companies.append({
+            "Company": company,
+            "Role": role,
+            "Status": status
+        })
+
+        print("Application added!")
+
+    elif choice == "2":
+        if not companies:
+            print("No applications yet.")
+        else:
+            for i, app in enumerate(companies, start=1):
+                print(f"\n{i}. {app['Company']}")
+                print(f"   Role: {app['Role']}")
+                print(f"   Status: {app['Status']}")
+
+    elif choice == "3":
+        print("Good luck with placements!")
+        break
+
+    else:
+        print("Invalid choice.")
